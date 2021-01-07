@@ -31,13 +31,13 @@ import (
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/prometheus/common/expfmt"
 	"github.com/stretchr/testify/assert"
-	cfg "github.com/vmware/vmware-go-kcl/clientlibrary/config"
-	"github.com/vmware/vmware-go-kcl/clientlibrary/metrics"
-	"github.com/vmware/vmware-go-kcl/clientlibrary/metrics/cloudwatch"
-	"github.com/vmware/vmware-go-kcl/clientlibrary/metrics/prometheus"
-	wk "github.com/vmware/vmware-go-kcl/clientlibrary/worker"
-	"github.com/vmware/vmware-go-kcl/logger"
-	zaplogger "github.com/vmware/vmware-go-kcl/logger/zap"
+	cfg "github.com/Sagarsaurus/vmware-go-kcl/clientlibrary/config"
+	"github.com/Sagarsaurus/vmware-go-kcl/clientlibrary/metrics"
+	"github.com/Sagarsaurus/vmware-go-kcl/clientlibrary/metrics/cloudwatch"
+	"github.com/Sagarsaurus/vmware-go-kcl/clientlibrary/metrics/prometheus"
+	wk "github.com/Sagarsaurus/vmware-go-kcl/clientlibrary/worker"
+	"github.com/Sagarsaurus/vmware-go-kcl/logger"
+	zaplogger "github.com/Sagarsaurus/vmware-go-kcl/logger/zap"
 )
 
 const (
