@@ -331,6 +331,7 @@ func (checkpointer *DynamoCheckpoint) putItem(input *dynamodb.PutItemInput) erro
 }
 
 func (checkpointer *DynamoCheckpoint) getItem(shardID string) (map[string]*dynamodb.AttributeValue, error) {
+	consistentRead := true
 	item, err := checkpointer.svc.GetItem(&dynamodb.GetItemInput{
 		TableName: aws.String(checkpointer.TableName),
 		Key: map[string]*dynamodb.AttributeValue{
@@ -338,6 +339,7 @@ func (checkpointer *DynamoCheckpoint) getItem(shardID string) (map[string]*dynam
 				S: aws.String(shardID),
 			},
 		},
+		ConsistentRead: &consistentRead,
 	})
 	return item.Item, err
 }

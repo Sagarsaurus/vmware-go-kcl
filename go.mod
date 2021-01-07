@@ -1,23 +1,32 @@
 module github.com/vmware/vmware-go-kcl
 
 require (
-	github.com/BurntSushi/toml v0.3.1 // indirect
-	github.com/aws/aws-sdk-go v1.34.8
+	github.com/aws/aws-sdk-go v1.36.22
 	github.com/awslabs/kinesis-aggregation/go v0.0.0-20201211133042-142dfe1d7a6d
-	github.com/golang/protobuf v1.3.1
-	github.com/google/uuid v1.1.1
-	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
-	github.com/prometheus/client_golang v0.9.3
-	github.com/prometheus/common v0.4.1
-	github.com/prometheus/procfs v0.0.0-20190523193104-a7aeb8df3389 // indirect
-	github.com/sirupsen/logrus v1.4.2
-	github.com/stretchr/testify v1.5.1
-	go.uber.org/atomic v1.4.0 // indirect
-	go.uber.org/multierr v1.2.0 // indirect
-	go.uber.org/zap v1.11.0
-	golang.org/x/sys v0.0.0-20190528012530-adf421d2caf4 // indirect
-	golang.org/x/text v0.3.2 // indirect
+	github.com/go-sql-driver/mysql v1.5.0 // indirect
+	github.com/golang/protobuf v1.4.3
+	github.com/google/go-cmp v0.5.4 // indirect
+	github.com/google/uuid v1.1.4
+	github.com/kr/text v0.2.0 // indirect
+	github.com/prometheus/client_golang v1.9.0
+	github.com/prometheus/common v0.15.0
+	github.com/prometheus/tsdb v0.7.1 // indirect
+	github.com/sirupsen/logrus v1.7.0
+	github.com/stretchr/testify v1.6.1
+	go.uber.org/multierr v1.6.0 // indirect
+	go.uber.org/zap v1.16.0
+	golang.org/x/lint v0.0.0-20201208152925-83fdc39ff7b5 // indirect
+	golang.org/x/mod v0.4.0 // indirect
+	golang.org/x/net v0.0.0-20201224014010-6772e930b67b // indirect
+	golang.org/x/sys v0.0.0-20210105210732-16f7687f5001 // indirect
+	golang.org/x/text v0.3.4 // indirect
+	golang.org/x/tools v0.0.0-20210106214847-113979e3529a // indirect
+	google.golang.org/protobuf v1.25.0 // indirect
+	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
+	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gopkg.in/yaml.v3 v3.0.0-20210107153145-c8046fb8b3d4 // indirect
+	honnef.co/go/tools v0.1.0 // indirect
 )
 
 go 1.13
