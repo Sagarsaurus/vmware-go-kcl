@@ -4,3 +4,6 @@ time="2021-01-07T12:16:47-05:00" level=info msg="Logrus is awesome" key1=value1
 {"level":"info","ts":"2021-01-07T12:43:04.261-0500","caller":"testing/testing.go:909","msg":"Zap is awesome","key1":"value1"}
 time="2021-01-07T12:43:04-05:00" level=debug msg="Starting with logrus" key1=value1
 time="2021-01-07T12:43:04-05:00" level=info msg="Logrus is awesome" key1=value1
+{"level":"info","ts":"2021-01-07T17:07:51.229-0500","caller":"testing/testing.go:909","msg":"Zap is awesome","key1":"value1"}
+time="2021-01-07T17:07:51-05:00" level=debug msg="Starting with logrus" key1=value1
+time="2021-01-07T17:07:51-05:00" level=info msg="Logrus is awesome" key1=value1

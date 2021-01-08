@@ -193,6 +193,10 @@ func (sc *ShardConsumer) getRecords(shard *par.ShardStatus) error {
 				if awsErr.Code() == kinesis.ErrCodeProvisionedThroughputExceededException || awsErr.Code() == ErrCodeKMSThrottlingException {
 					log.Errorf("Error getting records from shard %v: %+v", shard.ID, err)
 					retriedErrors++
+					if retriedErrors > 2 {
+						log.Warnf("More than 2 retries attempted for shardID: %s, consumerID: %s", shard.ID, sc.consumerID)
+						return err
+					}
 					// exponential backoff
 					// https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html#Programming.Errors.RetryAndBackoff
 					time.Sleep(time.Duration(math.Exp2(float64(retriedErrors))*100) * time.Millisecond)
